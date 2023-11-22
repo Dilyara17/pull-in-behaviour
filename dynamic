@@ -1,0 +1,11 @@
+% Define a range of values for normalized dynamic deflection u_d
+u_d = linspace(0, 1, 100); % Adjust the range and number of points as needed
+
+% Calculate normalized voltage V_n based on the equation
+V_n = sqrt(u_d .* (1 - u_d));
+
+% Plot the variation of normalized voltage V_n along with normalized dynamic deflection u_d
+plot(u_d, V_n, 'LineWidth', 2);
+xlabel('Normalized Dynamic Deflection (u_d)');
+ylabel('Normalized Voltage (V_n)');
+grid on;
