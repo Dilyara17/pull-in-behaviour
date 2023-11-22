@@ -1,0 +1,11 @@
+% Define a range of values for normalized static deflection us
+us = linspace(0, 1, 100); % Adjust the range and number of points as needed
+
+% Calculate normalized voltage V based on the equation
+V = sqrt(2 * us .* (1 - us).^2);
+
+% Plot the variation of normalized voltage V along with normalized static deflection us
+plot(us, V, 'LineWidth', 2);
+xlabel('Normalized Static Deflection (u_s)');
+ylabel('Normalized Voltage (V)');
+grid on;
